@@ -1,6 +1,5 @@
 <?php
 require_once 'config/db.php';
-require_once 'config/init.php';
 require_once 'config/session.php';
 
 if (isLoggedIn()) {
@@ -86,11 +85,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit" class="btn btn-primary btn-block">Login</button>
             </form>
             
-            <div class="login-info">
-                <h3>Akun Testing:</h3>
-                <p><strong>Admin:</strong> admin1 / password</p>
-                <p><strong>Panitia:</strong> panitia / password</p>
-                <p><strong>Member:</strong> member / password</p>
+            <div style="text-align: center; margin-top: 18px; padding-top: 18px; border-top: 1px solid #e0e0e0;">
+                <p style="color: #ffffff;">Belum punya akun?</p>
+                <a href="register.php" style="color: #ff0404ff; font-weight: lighter ; text-decoration: none; transition: color 0.3s;">
+                    Daftar Sekarang
+                </a>
             </div>
         </div>
     </div>
